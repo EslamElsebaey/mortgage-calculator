@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Mortgage Rapayment</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="parent">
+          <div class="child white-bg">
+            <div class="upper-title">
+              <h1>mortgage calculator</h1>
+              <button class="clearBtn">clear all</button>
+            </div>
+            <form class="form">
+              <div class="input-holder">
+                <label for="" class="label">mortgage amount</label>
+                <div class="input-wrapper">
+                  <input
+                    type="number"
+                    step="any"
+                    class="input"
+                    id="mortgage-amount"
+                  />
+                  <div class="icon">£</div>
+                </div>
+              </div>
+              <div class="grid-2">
+                <div class="input-holder">
+                  <label for="" class="label">mortgage term</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="number"
+                      step="any"
+                      class="input"
+                      id="mortgage-term"
+                    />
+                    <div class="icon">years</div>
+                  </div>
+                </div>
+                <div class="input-holder">
+                  <label for="" class="label">interest rate</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="number"
+                      step="any"
+                      class="input"
+                      id="interest-rate"
+                    />
+                    <div class="icon">%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-holder">
+                <label class="label">Mortgage Type</label>
+                <div class="radio-wrapper">
+                  <label class="label">
+                    <input
+                      type="radio"
+                      class="input"
+                      name="mortgage"
+                      value="repayment"
+                    />
+                    <div class="checkmark"></div>
+                    Repayment
+                  </label>
+                  <label class="label">
+                    <input
+                      type="radio"
+                      class="input"
+                      name="mortgage"
+                      value="interest-only"
+                    />
+                    <div class="checkmark"></div>
+                    Interest Only
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="calculate-btn">
+                <img src="images/icon-calculator.svg" alt="" />
+                calculate repayments
+              </button>
+            </form>
+          </div>
+          <div class="child dark-bg">
+            <div class="inner-content" id="defaultMessage">
+              <img src="images/illustration-empty.svg" alt="" />
+              <h3 class="default-title">Results shown here</h3>
+              <p class="default-text">
+                Complete the form and click "claculate repayments" to see what
+                your monthly repayments would be.
+              </p>
+            </div>
+            <div class="inner-content" id="results" style="display: none">
+              <h4 class="result-title">Your results</h4>
+              <p class="result-text">
+                Your results are shown below based on the information you
+                provided. To adjust the results, edit the form and click
+                "calculate repayments" again.
+              </p>
+              <div class="result-box">
+                <h4 class="sub-text">Your monthly repayments</h4>
+                <h2 class="result-text">
+                  £ <span class="result-num">0</span>
+                </h2>
+                <h4 class="sub-text">Total you will repay over the term</h4>
+                <h3 class="total-text">
+                  £ <span class="total-num">539322.94</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
